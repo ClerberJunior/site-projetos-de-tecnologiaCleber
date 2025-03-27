@@ -8,7 +8,7 @@ Site desenvolvido para armazenar informações de projetos de tecnologia do CEET
 - **HTML5** (Estrutura)
 - **CSS3** (Estilização)
 - **JavaScript** (Interatividade)
-- **Bootstrap** (Framework CSS, opcional)
+- **Bootstrap** (Framework)
 
 ## Requisitos
 
