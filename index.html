@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Projetos de Tecnologia CEET</title>
+
+		<!-- Início bootstrap-->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Fim bootstrap-->
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<!--inicio header-->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="logo-ceet"
+					><a class="navbar-brand" href="#"><img width="50" height="50" src="/assets/img/logo_ceet.jpeg" alt="logo ceet" /></a>
+				</div>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#conteudoNavbarSuportado"
+					aria-controls="conteudoNavbarSuportado"
+					aria-expanded="false"
+					aria-label="Alterna navegação"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projetos">Projetos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#torneios">Torneios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#premiacoes">Premiações</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#programacao">Programação</a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Sobre
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Quem somos</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#contato">Contato</a>
+							</div>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" />
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+					</form>
+				</div>
+			</nav>
+		</header>
+		<!--fim do header-->
+
+		<!-- início do carrossel-->
+		<div id="home">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="/assets/img/carousel01.webp" alt="Primeiro Slide" />
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="/assets/img/carousel01.webp" alt="Segundo Slide" />
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="/assets/img/carousel01.webp" alt="Terceiro Slide" />
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Próximo</span>
+				</a>
+			</div>
+			<!--Fim do carrossel-->
+
+			<div class="container-circulos">
+				<a href="pagina1.html" class="icone-circular">
+					<img src="/assets/img/logo_ceet.jpeg" alt="Ícone 1" />
+				</a>
+				<a href="pagina2.html" class="icone-circular">
+					<img src="/assets/img/logo_ceet.jpeg" alt="Ícone 2" />
+				</a>
+				<a href="pagina3.html" class="icone-circular">
+					<img src="/assets/img/logo_ceet.jpeg" alt="Ícone 3" />
+				</a>
+				<a href="pagina4.html" class="icone-circular">
+					<img src="/assets/img/logo_ceet.jpeg" alt="Ícone 4" />
+				</a>
+			</div>
+		</div>
+
+		<main>
+			<section class="imagem-texto" id="projetos">
+				<div class="texto">
+					<h2>Projetos</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, libero alias soluta laboriosam dolore fugiat quos, dolorum sed
+						accusantium eaque inventore quisquam autem ratione! Accusantium ullam odio minus dolorum aliquid. Lorem ipsum dolor, sit amet
+						consectetur adipisicing elit. Aperiam consequuntur quos dolore molestias vero enim fuga! Iusto ipsam sed minima fuga unde ipsum
+						iure, facilis rem dolorem. Quidem, a provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab sapiente ratione
+						asperiores, odit hic sit recusandae quia non error maiores quaerat adipisci cumque dicta tempore totam enim architecto ipsa.
+					</p>
+					<a href="#" class="botao">Saiba mais</a>
+				</div>
+				<div class="imagem">
+					<img src="/assets/img/carousel01.webp" alt="Imagem exemplo" />
+				</div>
+			</section>
+
+			<section class="imagem-texto" id="torneios">
+				<div class="imagem">
+					<img src="/assets/img/carousel01.webp" alt="Imagem exemplo" />
+				</div>
+				<div class="texto">
+					<h2>Bem-vindo ao nosso site</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, libero alias soluta laboriosam dolore fugiat quos, dolorum sed
+						accusantium eaque inventore quisquam autem ratione! Accusantium ullam odio minus dolorum aliquid. Lorem ipsum dolor, sit amet
+						consectetur adipisicing elit. Aperiam consequuntur quos dolore molestias vero enim fuga! Iusto ipsam sed minima fuga unde ipsum
+						iure, facilis rem dolorem. Quidem, a provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab sapiente ratione
+						asperiores, odit hic sit recusandae quia non error maiores quaerat adipisci cumque dicta tempore totam enim architecto ipsa.
+					</p>
+					<a href="#" class="botao">Saiba mais</a>
+				</div>
+			</section>
+
+			<section class="imagem-texto" id="premiacoes">
+				<div class="texto">
+					<h2>Premiações</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, libero alias soluta laboriosam dolore fugiat quos, dolorum sed
+						accusantium eaque inventore quisquam autem ratione! Accusantium ullam odio minus dolorum aliquid. Lorem ipsum dolor, sit amet
+						consectetur adipisicing elit. Aperiam consequuntur quos dolore molestias vero enim fuga! Iusto ipsam sed minima fuga unde ipsum
+						iure, facilis rem dolorem. Quidem, a provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab sapiente ratione
+						asperiores, odit hic sit recusandae quia non error maiores quaerat adipisci cumque dicta tempore totam enim architecto ipsa.
+					</p>
+					<a href="#" class="botao">Saiba mais</a>
+				</div>
+				<div class="imagem">
+					<img src="/assets/img/carousel01.webp" alt="Imagem exemplo" />
+				</div>
+			</section>
+
+			<section class="imagem-texto" id="programacao">
+				<div class="imagem">
+					<img src="/assets/img/carousel01.webp" alt="Imagem exemplo" />
+				</div>
+				<div class="texto">
+					<h2>Programação</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, libero alias soluta laboriosam dolore fugiat quos, dolorum sed
+						accusantium eaque inventore quisquam autem ratione! Accusantium ullam odio minus dolorum aliquid. Lorem ipsum dolor, sit amet
+						consectetur adipisicing elit. Aperiam consequuntur quos dolore molestias vero enim fuga! Iusto ipsam sed minima fuga unde ipsum
+						iure, facilis rem dolorem. Quidem, a provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab sapiente ratione
+						asperiores, odit hic sit recusandae quia non error maiores quaerat adipisci cumque dicta tempore totam enim architecto ipsa.
+					</p>
+					<a href="#" class="botao">Saiba mais</a>
+				</div>
+			</section>
+
+			<section id="contato">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.1139270366075!2d-40.2951495247621!3d-20.336911681144876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb8163945193ba7%3A0x63396a0b54c48de7!2sCEET%20VASCO%20COUTINHO!5e0!3m2!1spt-BR!2sbr!4v1739823012661!5m2!1spt-BR!2sbr"
+					width="600"
+					height="450"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+
+				<div class="contato-container">
+					<div class="page-container">
+						<div class="container-itens">
+							<h2>Contato</h2>
+							<div class="container-endereco">
+								<form>
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Nome</label>
+										<input type="text" class="form-control" id="exampleFormControlInput1" />
+									</div>
+
+									<div class="form-group">
+										<label for="exampleFormControlInput1">E-mail</label>
+										<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" />
+									</div>
+
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1">Mensagem</label>
+										<textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+										<button type="submit" class="btn btn-primary"> Enviar mensagem </button>
+									</div>
+								</form>
+								<div class="detalhes-endereco">
+									<div class="dado-endereco">
+										<h5>Endereço</h5>
+										<p>
+											<img src="/assets/img/localizacao_icon.png" alt="localização" />
+											Av. Luciano das Neves, s/n - Centro de Vila Velha, Vila Velha - ES, 29100-060
+										</p>
+									</div>
+
+									<div class="dado-endereco">
+										<h5>Entre em contato</h5>
+										<p>
+											<img src="/assets/img/phone_icon.png" alt="" />
+											02732299309 <br />
+											<img src="/assets/img/email_icon.png" alt="" />
+
+											projeto.ceet.vasco@gmail.com
+										</p>
+									</div>
+
+									<div class="dado-endereco">
+										<h5>Horário de funcionamento</h5>
+
+										<p>
+											<img src="/assets/img/time_icon.png" alt="" />
+											De segunda à sexta-feira das 08h às 18h
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Início Footer-->
+
+		<footer class="rodape">
+			<div class="rodape-conteudo">
+				<div class="rodape-sobre">
+					<h3>Sobre nós</h3>
+					<p> Oferecemos soluções completas com qualidade e inovação. Nossa missão é entregar valor e confiança para nossos clientes. </p>
+				</div>
+
+				<div class="rodape-links">
+					<h3>Links úteis</h3>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Projetos</a></li>
+						<li><a href="#">Torneios</a></li>
+					</ul>
+				</div>
+
+				<div class="rodape-contato">
+					<h3>Contato</h3>
+					<p>Email: contato@exemplo.com</p>
+					<p>Telefone: (11) 99999-9999</p>
+
+					<div class="rodape-redes">
+						<a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+						<a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="rodape-copy">
+				<p>&copy; 2025 Todos os direitos reservados.</p>
+				<a href="#" class="btn-topo">Voltar ao topo ↑</a>
+			</div>
+		</footer>
+	</body>
+</html>
