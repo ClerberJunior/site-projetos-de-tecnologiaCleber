@@ -4,7 +4,6 @@ Site desenvolvido para armazenar informações de projetos de tecnologia do CEET
 
 ## Tecnologias Utilizadas
 
-- **PHP** (Backend)
 - **HTML5** (Estrutura)
 - **CSS3** (Estilização)
 - **JavaScript** (Interatividade)
@@ -14,9 +13,8 @@ Site desenvolvido para armazenar informações de projetos de tecnologia do CEET
 
 Certifique-se de ter os seguintes requisitos instalados no seu sistema:
 
-- **PHP** (versão 7.4 ou superior)
-- **Apache** (via XAMPP, WAMP ou outro servidor local)
 - **Git** (para clonar o repositório)
+- **navegador web moderno** (Chrome, Firefox, Edge, etc.)
 
 ## Como Executar o Projeto
 
@@ -32,48 +30,36 @@ Certifique-se de ter os seguintes requisitos instalados no seu sistema:
  cd site-projetos-de-tecnologia
 ```
 
-### 3. Mova os arquivos para o diretório do servidor local
+### 3. Abrindo o projeto
 
-Se estiver usando XAMPP:
+Como este é um projeto que utiliza apenas HTML, CSS e Bootstrap, você pode simplesmente abrir o arquivo index.html em qualquer navegador:
 
-```bash
- mv site-projetos-de-tecnologia/ /c/xampp/htdocs/
-```
+# No Windows
 
-Se estiver usando WAMP:
+start index.html
 
-```bash
- mv site-projetos-de-tecnologia/ /c/wamp/www/
-```
+# No macOS
+
+open index.html
+
+# No Linux
+
+xdg-open index.html
 
 ### 4. Iniciar o servidor local
 
-Para rodar o projeto, inicie o servidor Apache e MySQL no XAMPP/WAMP ou rode o PHP embutido:
-
-```bash
- php -S localhost
-```
-
-Acesse no navegador:
-
-```
- http://localhost/site-projetos-de-tecnologia/
-```
-
-Ou, se usou o servidor embutido:
-
-```
- http://localhost/
-```
+Alternativamente, você pode usar uma extensão de servidor local como Live Server no VS Code para uma experiência de desenvolvimento aprimorada.
 
 ## Estrutura do Projeto
 
 ```
 /site-projetos-de-tecnologia
-│── /assets          # Arquivos estáticos (CSS, JS, imagens)
-│── /includes        # Arquivos PHP reutilizáveis (header, footer)
+│── /assets          # Arquivos estáticos (CSS, imagens)
+│   │── /css         # Arquivos CSS
+│   │── /img         # Imagens do projeto
+│   └── /bootstrap   # Arquivos do Bootstrap
 │── /pages           # Páginas do site
-│── index.php        # Página inicial
+│── index.html       # Página inicial
 │── README.md        # Documentação
 ```
 
