@@ -98,6 +98,21 @@ html {
 				}
 			}
 
+			@media (max-width: 600px) {
+				#projetos-circulos {
+					.page-container {
+						gap: 20px;
+						padding: 1rem;
+						flex-direction: row;
+					}
+
+					.icone-circular {
+						width: 70px;
+						height: 70px;
+					}
+				}
+			}
+
 			#torneios {
 				border: 1px solid yellow;
 			}
