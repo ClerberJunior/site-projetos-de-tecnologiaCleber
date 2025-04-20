@@ -57,30 +57,53 @@ html {
 				padding: 4rem 2.5rem;
 			}
 
+			/* Media query page-container */
+			@media (max-width: 768px) {
+				.page-container {
+					flex-direction: column;
+				}
+			}
+
+			/*=======================================
+					pagina inicial do site
+			=======================================*/
+
 			#home {
 				height: 100%;
 			}
+
+			/* =======================================
+						Section quem somos
+			=========================================== */
 
 			#quem-somos {
 				border: 1px solid yellow;
 			}
 
+			/* =======================================
+						Section Projetos
+			=========================================== */
+
 			#projetos {
 				border: 1px solid red;
 			}
+
+			/* =======================================
+						Section Projetos-circulos
+			=========================================== */
 
 			#projetos-circulos {
 				.page-container {
 					padding: 2rem 0;
 					display: flex;
 					align-items: center;
-					justify-content: center;
+					justify-content: space-evenly;
 					gap: 30px;
 				}
 
 				.icone-circular {
-					width: 200px;
-					height: 200px;
+					width: 150px;
+					height: 150px;
 					border-radius: 50%;
 					overflow: hidden;
 					background-color: #f0f0f0;
@@ -101,29 +124,45 @@ html {
 			@media (max-width: 600px) {
 				#projetos-circulos {
 					.page-container {
-						gap: 20px;
+						gap: 4px;
 						padding: 1rem;
 						flex-direction: row;
 					}
 
 					.icone-circular {
-						width: 70px;
-						height: 70px;
+						width: 64px;
+						height: 64px;
 					}
 				}
 			}
+
+			/* =======================================
+						Section Torneios
+			=========================================== */
 
 			#torneios {
 				border: 1px solid yellow;
 			}
 
+			/* =======================================
+						Section Premiações
+			=========================================== */
+
 			#premiacoes {
 				border: 1px solid green;
 			}
 
+			/* =======================================
+						Section Programação
+			=========================================== */
+
 			#programacao {
 				border: 1px solid blue;
 			}
+
+			/* =======================================
+						Section Contato
+			=========================================== */
 
 			#contato {
 				width: 100%;
@@ -172,23 +211,6 @@ html {
 									filter: drop-shadow(3px 3px 1px #7d7d7e);
 								}
 
-								/* form {
-									width: 100%;
-									padding: 30px 0;
-
-									textarea {
-										resize: none;
-									}
-
-									button {
-										background-color: var(--rosa);
-										border: none;
-
-										&:hover {
-											background-color: var(--vinho);
-										}
-									}
-								} */
 								.detalhes-endereco {
 									width: 100%;
 									padding: 35px;
@@ -232,7 +254,7 @@ html {
 				}
 			}
 			/* ===================================================
-						media query contato
+						Media query contato
 			=================================================== */
 			@media (max-width: 600px) {
 				#contato {
@@ -256,6 +278,10 @@ html {
 								.container-endereco {
 									display: flex;
 									flex-direction: column;
+
+									.image-vasco-coutinho {
+										width: 90vw;
+									}
 									form {
 										padding: 5px 0;
 
@@ -291,13 +317,6 @@ html {
 							}
 						}
 					}
-				}
-			}
-
-			/* Responsivo */
-			@media (max-width: 768px) {
-				.page-container {
-					flex-direction: column;
 				}
 			}
 		}
