@@ -4,13 +4,14 @@
 	--rosa-claro: #f6a9c79a;
 	--rosa-escuro: #f797d2;
 	--azul-claro: #a7d5f8e8;
-	--azul-escuro: #316abc;
+	--azul-escuro: #316bbc8c;
 }
 
 html {
 	scroll-behavior: smooth;
 	button {
-		background-color: #007bff !important;
+		outline: none !important;
+		background-color: var(--azul-escuro) !important;
 		color: white !important;
 		border: none !important;
 		&:hover {
@@ -33,8 +34,6 @@ html {
 		border: 1px solid var(--azul-claro);
 	}
 	body {
-		border: 1px solid rgb(17, 255, 0);
-
 		.carousel-item {
 			height: 400px;
 		}
@@ -118,21 +117,6 @@ html {
 
 				.icone-circular:hover {
 					transform: scale(1.1);
-				}
-			}
-
-			@media (max-width: 600px) {
-				#projetos-circulos {
-					.page-container {
-						gap: 4px;
-						padding: 1rem;
-						flex-direction: row;
-					}
-
-					.icone-circular {
-						width: 64px;
-						height: 64px;
-					}
 				}
 			}
 
@@ -254,52 +238,47 @@ html {
 				}
 			}
 			/* ===================================================
-						Media query contato
+						Media query
 			=================================================== */
-			@media (max-width: 600px) {
+
+			/* Medium devices (tablets, less than 992px) */
+			@media (max-width: 992px) {
+				#projetos-circulos {
+					.page-container {
+						gap: 4px;
+						padding: 1.5rem;
+						flex-direction: row;
+					}
+					.icone-circular {
+						width: 80px;
+						height: 80px;
+					}
+				}
+
 				#contato {
 					.contato-container {
 						.page-container {
-							max-width: 500px;
+							max-width: 900px;
 							margin: 10px;
-							justify-content: center;
-							align-items: center;
-							box-shadow: 10px 13px 25px -12px rgba(105, 98, 105, 1);
-
 							.container-itens {
-								display: flex;
-								flex-direction: column;
 								h2 {
-									color: var(--vinho);
-									font-weight: bolder;
-									font-size: 1.5rem;
+									font-size: 2rem;
 								}
 
 								.container-endereco {
-									display: flex;
 									flex-direction: column;
+									align-items: center;
 
 									.image-vasco-coutinho {
-										width: 90vw;
+										width: 80vw;
+										height: 40vh;
 									}
-									form {
-										padding: 5px 0;
 
-										button {
-											width: 100%;
-											margin: 8px;
-											margin-bottom: 1px;
-										}
-									}
 									.detalhes-endereco {
-										width: 100%;
 										padding: 10px;
 										gap: 5px;
 										flex-wrap: nowrap;
 										.dado-endereco {
-											display: flex;
-											flex-direction: column;
-											justify-content: center;
 											align-items: center;
 											h5 {
 												display: none;
@@ -308,8 +287,127 @@ html {
 											p {
 												padding: 5px;
 												text-wrap: wrap;
+												font-size: 22px;
+												text-align: center;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			/* Small devices (landscape phones, less than 768px) */
+			@media (max-width: 768px) {
+				#projetos-circulos {
+					.page-container {
+						gap: 4px;
+						padding: 1.5rem;
+						flex-direction: row;
+					}
+					.icone-circular {
+						width: 80px;
+						height: 80px;
+					}
+				}
+
+				#contato {
+					.contato-container {
+						.page-container {
+							max-width: 750px;
+							margin: 10px;
+							.container-itens {
+								h2 {
+									font-size: 2rem;
+								}
+
+								.container-endereco {
+									flex-direction: column;
+									align-items: center;
+									.image-vasco-coutinho {
+										width: 80vw;
+									}
+
+									.detalhes-endereco {
+										padding: 10px;
+										gap: 5px;
+										flex-wrap: nowrap;
+										.dado-endereco {
+											align-items: center;
+											h5 {
+												display: none;
+											}
+
+											p {
+												padding: 5px;
+												text-wrap: wrap;
+												font-size: 22px;
+												text-align: center;
+
+												img {
+													width: 30px;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			/* Small devices (landscape phones, 576px and up) */
+			@media (max-width: 576px) {
+				#projetos-circulos {
+					.page-container {
+						gap: 4px;
+						padding: 1rem;
+						flex-direction: row;
+					}
+					.icone-circular {
+						width: 60px;
+						height: 60px;
+					}
+				}
+
+				#contato {
+					.contato-container {
+						.page-container {
+							max-width: 500px;
+							margin: 10px;
+							.container-itens {
+								h2 {
+									font-size: 1.5rem;
+								}
+
+								.container-endereco {
+									flex-direction: column;
+
+									.image-vasco-coutinho {
+										width: 90vw;
+									}
+
+									.detalhes-endereco {
+										padding: 10px;
+										gap: 5px;
+										flex-wrap: nowrap;
+										.dado-endereco {
+											align-items: center;
+											h5 {
+												display: none;
+											}
+
+											p {
+												padding: 5px;
 												font-size: 14px;
 												text-align: center;
+
+												img {
+													width: 22px;
+												}
 											}
 										}
 									}
