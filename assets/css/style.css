@@ -5,10 +5,12 @@
 	--rosa-escuro: #f797d2;
 	--azul-claro: #a7d5f8e8;
 	--azul-escuro: #316bbc8c;
+	--cor-fundo: #316bbc8c;
 }
 
 html {
 	scroll-behavior: smooth;
+
 	button {
 		outline: none !important;
 		background-color: var(--azul-escuro) !important;
@@ -16,9 +18,13 @@ html {
 		border: none !important;
 		&:hover {
 			background-color: var(--rosa-escuro) !important;
-			color: var(--azul-escuro) !important;
+		}
+
+		&:active {
+			background-color: var(--rosa-claro) !important;
 		}
 	}
+
 	body::-webkit-scrollbar {
 		width: 9px;
 	}
@@ -33,6 +39,7 @@ html {
 		border-bottom-left-radius: 20px;
 		border: 1px solid var(--azul-claro);
 	}
+
 	body {
 		.carousel-item {
 			height: 400px;
@@ -42,11 +49,16 @@ html {
 			position: sticky;
 			top: 0;
 			z-index: 999;
+
+			.nav-top {
+				background-color: var(--rosa-escuro);
+				height: 24px;
+			}
 		}
 
 		main {
 			section {
-				scroll-margin-top: 76px;
+				scroll-margin-top: 100px;
 			}
 
 			.page-container {
@@ -243,6 +255,14 @@ html {
 
 			/* Medium devices (tablets, less than 992px) */
 			@media (max-width: 992px) {
+				/* section {
+					scroll-margin-top: 100px;
+				} */
+
+				.carousel-item {
+					height: auto;
+				}
+
 				#projetos-circulos {
 					.page-container {
 						gap: 4px;
@@ -256,18 +276,31 @@ html {
 				}
 
 				#contato {
+					iframe {
+						display: none;
+					}
+
 					.contato-container {
+						position: relative;
+
 						.page-container {
 							max-width: 900px;
 							margin: 10px;
+							box-shadow: none;
+
 							.container-itens {
+								width: 100%;
 								h2 {
 									font-size: 2rem;
+									margin-bottom: 30px;
 								}
 
 								.container-endereco {
 									flex-direction: column;
 									align-items: center;
+									gap: 10px;
+									width: 80vw;
+									margin: auto;
 
 									.image-vasco-coutinho {
 										width: 80vw;
@@ -278,8 +311,10 @@ html {
 										padding: 10px;
 										gap: 5px;
 										flex-wrap: nowrap;
+										border-radius: 4px;
+										box-shadow: 1px 3px 3px 1px #7d7d7eab;
 										.dado-endereco {
-											align-items: center;
+											align-items: start;
 											h5 {
 												display: none;
 											}
@@ -288,7 +323,7 @@ html {
 												padding: 5px;
 												text-wrap: wrap;
 												font-size: 22px;
-												text-align: center;
+												text-align: start;
 											}
 										}
 									}
@@ -316,7 +351,6 @@ html {
 				#contato {
 					.contato-container {
 						.page-container {
-							max-width: 750px;
 							margin: 10px;
 							.container-itens {
 								h2 {
@@ -326,6 +360,7 @@ html {
 								.container-endereco {
 									flex-direction: column;
 									align-items: center;
+
 									.image-vasco-coutinho {
 										width: 80vw;
 									}
@@ -335,7 +370,7 @@ html {
 										gap: 5px;
 										flex-wrap: nowrap;
 										.dado-endereco {
-											align-items: center;
+											align-items: start;
 											h5 {
 												display: none;
 											}
@@ -344,7 +379,7 @@ html {
 												padding: 5px;
 												text-wrap: wrap;
 												font-size: 22px;
-												text-align: center;
+												text-align: start;
 
 												img {
 													width: 30px;
@@ -385,6 +420,7 @@ html {
 
 								.container-endereco {
 									flex-direction: column;
+									width: 90vw;
 
 									.image-vasco-coutinho {
 										width: 90vw;
@@ -395,7 +431,7 @@ html {
 										gap: 5px;
 										flex-wrap: nowrap;
 										.dado-endereco {
-											align-items: center;
+											align-items: start;
 											h5 {
 												display: none;
 											}
@@ -403,7 +439,7 @@ html {
 											p {
 												padding: 5px;
 												font-size: 14px;
-												text-align: center;
+												text-align: start;
 
 												img {
 													width: 22px;
