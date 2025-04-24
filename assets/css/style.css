@@ -30,13 +30,11 @@ html {
 	}
 
 	body::-webkit-scrollbar-track {
-		background: (--cor-fundo);
+		background-color: var(--azul-claro);
 	}
 
 	body::-webkit-scrollbar-thumb {
 		background-color: var(--rosa-escuro);
-		border-top-left-radius: 20px;
-		border-bottom-left-radius: 20px;
 		border: 1px solid var(--azul-claro);
 	}
 
